@@ -1,0 +1,81 @@
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,#1E90FF,#00BFFF);
+    padding : 30px;
+ }
+ .jumbotron, h1{
+   color : white;
+ }
+ .jumbotron, form{
+   background-color: #fff;
+   padding : 10px;
+   border-radius: 5px;
+ }
+ .jumbotron .form input{
+   border:none;
+   padding:5px;
+   width: 350px;
+ }
+ .jumbotron .form .btn-submit{
+   background-color: rgb(70, 104, 253);
+   border-radius: 7px;
+   border-color: white;
+   padding: 10px;
+   color : whitesmoke;
+   cursor : pointer;
+ }
+ .content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center ;
+ }
+ .card{
+   width: 500px;
+   display: flex;
+   flex-direction: row;
+   border: 1px solid grey;
+   padding :20px;
+   border-radius: 5px;
+   margin-top: 15px;
+   
+ }
+ .card .text{
+   flex: 3;
+ }
+ .button-action{
+   flex: 1;
+ }
+ .btn-edit{
+   border : none;
+   background-color: rgb(231, 228, 25); ;
+   padding : 10px;
+   border-radius: 5px;
+   color : #fff;
+   cursor : pointer;
+   margin : 2px;
+   
+ }
+ .btn-delete{
+   border : none;
+   background-color: rgb(241, 32, 32); ;
+   padding : 10px;
+   border-radius: 5px;
+   color : #fff;
+   margin : 2px;
+   cursor : pointer;
+ }
+ @media screen and (max-width:600px) and (min-width:300px)  {
+   .jumbotron .form input{
+     width: 250px;
+   }
+   .card{
+     width: 300px;
+   }
+   .button-action{
+     flex:2;
+   }
+ }
